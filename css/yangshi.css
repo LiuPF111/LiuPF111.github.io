@@ -1,0 +1,176 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    color: #fff;
+    line-height: 1.5em;
+}
+
+#container {
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    width: 1296px;
+    margin-left:auto;
+    margin-right: auto;
+}
+#banner{
+	background-image: url("../image/淮滨夜景.png");
+	height: 400px;
+	background-size: 1300px 400px
+}
+body {
+ 	background-color: #85FFBD;
+    background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+}
+#nav li {
+    float: left;
+    list-style-type: none;
+}
+#nav a {
+	font-size:20px;
+	display: inline-block;
+	padding: 30px 142px;
+	font-weight:600;
+	color: #fff;
+	text-decoration:none; 
+	background-color: #0E8CEF; 
+}
+.jianjie{
+	position: relative;
+	z-index: 1;
+}
+.jianjie::after{
+	content: '';
+	width: 1px;
+	height:100%;
+	position: absolute;
+	top:0;
+	left: 0;
+	background-color:#08E5F0;
+	transition:all .2s linear;
+	z-index: -1;
+}
+.jianjie:hover::after{
+	width: 100%;
+}
+.meijing{
+	position: relative;
+	z-index: 1;
+}
+.meijing::after{
+	content: '';
+	width: 1px;
+	height:100%;
+	position: absolute;
+	top:0;
+	left: 0;
+	background-color:#08E5F0;
+	transition:all .2s linear;
+	z-index: -1;
+}
+.meijing:hover::after{
+	width: 100%;
+}
+.meishi{
+	position: relative;
+	z-index: 1;
+}
+.meishi::after{
+	content: '';
+	width: 1px;
+	height:100%;
+	position: absolute;
+	top:0;
+	left: 0;
+	background-color:#08E5F0;
+	transition:all .2s linear;
+	z-index: -1;
+}
+.meishi:hover::after{
+	width: 100%;
+}
+.shipin{
+	position: relative;
+	z-index: 1;
+}
+.shipin::after{
+	content: '';
+	width: 1px;
+	height:100%;
+	position: absolute;
+	top:0;
+	left: 0;
+	background-color:#08E5F0;
+	transition:all .2s linear;
+	z-index: -1;
+}
+.shipin:hover::after{
+	width: 100%;
+}
+.clearboth {
+    clear: both;
+}
+b{ 
+	padding:20px;
+}
+p{
+	font-size:14px;
+	padding:20px; 
+	display:inline-block;
+	color:#fff; 
+	text-align: justify; 
+	text-justify: inter-ideograph; 
+	text-indent: 2em;
+}
+.box{
+	float: left;
+	padding: 10px;
+	margin: 10px;
+	width: 600px;
+	height: 400px;
+	position:relative;
+	overflow: hidden;
+}
+.box:hover img{
+	filter: blur(5px);
+}
+.box::after{
+	content: "";
+	width:700px;
+	height:0px;
+	background-color: rgba(0,0,0,0);
+	position:absolute;
+	left:0px;
+	top:0px;
+	transform-origin: left center;
+	transform: rotate(27deg);
+	transition:all ease .5s;
+}
+.box:hover::after{
+	height: 400px;
+	top:-150px; 
+	background-color: rgba(0,0,0,0.5);
+}
+.txt{
+	position: absolute;
+	top:120px;
+	left:60px;
+	right:100px;
+	color: #fff;
+	z-index: 3;
+	transform: rotate(30deg);
+	transition:all ease .5s;
+	opacity:0;
+}
+.txt:hover{
+	transform: rotate(0deg);
+	opacity:1;
+}
+#main-shipin{
+	margin:10px;
+}
+#footer{
+	padding-left: 500px;
+}
